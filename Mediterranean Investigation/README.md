@@ -148,6 +148,8 @@ With all this information, we can put it all into the flag format, and it would 
 
 - `FSIIECTF{antoine_fermier_rocky_jujutsu_kaisen_paris-saclay_pentester_bouillabaisse_hackcorp_pentester@gmail.com_fanny}`
 
+After submitting the flag, we've completed the challenge!
+
 # Conclusion
 
 This challenge was a ton of fun and we thoroughly enjoyed the whole process of piecing together clues from different sources. It was rewarding to see all the bits of information come together. That said, the fact that the Twitter handle didn’t match the original username was super frustrating and added some unnecessary difficulty but that is due to the fact that twitter has a 15 character limit for their handles. In the end, it all worked out, and it was a fun experience overall!
