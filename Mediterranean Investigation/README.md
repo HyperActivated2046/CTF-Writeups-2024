@@ -94,7 +94,7 @@ Let’s hope I don’t miss it, it’s not my favorite dish for nothing". By inp
 
 <div align="center">
 
-![FoodOri](images/RecipeOnline.png.png)
+![FoodOri](images/RecipeOnline.png)
 
 </div>
 
@@ -134,15 +134,17 @@ And that's it, that's all the information we needed!
 
 Now, we can finalize all the information.
 
-- The user's real first name. : Antoine
-- The user's family name. : Fermier
-- The user's dog's name. : Rocky
-- The user's favourite anime. : Jujutsu Kaisen
-- The user's university. : University Paris-Saclay
-- The user's email. : hackcorp_pentester@gmail.com
-- The user's job position. : Pentester
-- The user's favorite food. : Bouillabaisse
-- The user's favourite woman's name. : Fanny
+
+- The user's real first name.           : Antoine
+- The user's family name.               : Fermier
+- The user's dog's name.                : Rocky
+- The user's favourite anime.           : Jujutsu Kaisen
+- The user's university.                : University Paris-Saclay
+- The user's email.                     : hackcorp_pentester@gmail.com
+- The user's job position.              : Pentester
+- The user's favorite food.             : Bouillabaisse
+- The user's favourite woman's name.    : Fanny
+
 
 With all this information, we can put it all into the flag format, and it would look something like this:
 
