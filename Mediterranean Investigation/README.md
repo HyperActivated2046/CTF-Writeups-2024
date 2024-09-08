@@ -24,7 +24,7 @@ In the case of spaces in the word, we had to replace it with "-", and the spaces
 
 ## Step 1: Username Search
 
-With the given username Fanonymous57harper, the first instinct was to check whether this username was associated with any online profiles or social media accounts with the [What's My Name tool](https://whatsmyname.app/). After the search, the results were a github account with the name "anonymous57harper". Within said account, there was a GitHub repository called PetMealPlanner. The repo had a few files, including mainstart.go.
+With the given username anonymous57harper, the first instinct was to check whether this username was associated with any online profiles or social media accounts with the [What's My Name tool](https://whatsmyname.app/). After the search, the results were a github account with the name "anonymous57harper". Within said account, there was a GitHub repository called PetMealPlanner. The repo had a few files, including mainstart.go.
 
 <div align="center">
 
