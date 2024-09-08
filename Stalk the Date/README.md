@@ -1,49 +1,43 @@
 # FSIIEC-CTF 2024
 
-[FSIIEC](FSIIEC.png)
-
 ## Introduction
 
-Stalk The Date, was an OSINT-based task with a duration of 24 hours. The goal was to gather personal information about a specific target through open-source intelligence techniques. The difficulty level of the challenge was rated as hard and had given a total points of 300.
+Stalk The Date was a 24-hour OSINT-based challenge with a difficulty rated as hard and a total of 300 points. The task was to gather personal information about a target using open-source techniques.
 
 The task was to:
 
-- Find information regarding the name "F14sh_W1l50n". He also loved desserts. 👍
-- With the information that he has gained the Gold HTML badge at July 2013, find what country he is in.
-- Find the user's favorite restaurant.
-- Find the user's favorite dessert.
-- Once completed, md5 hash his favourite restaurant's name and his favourite dessert's name (in plural) together in this format: `Favouriterestaurant_Favouritedessertinplural`
-  and submit with the flag format of `FSIIECTF{hash}`.
+- Investigate the name "F14sh_W1l50n". Who loved desserts. 👍
+- Using his Gold HTML badge from July 2013, find his country.
+- Determine his favorite restaurant.
+- Identify his favorite dessert.
+- Finally, md5 hash his favorite restaurant and dessert (in plural) in the format: `Favouriterestaurant_Favouritedessertinplural`
+  and submit it as `FSIIECTF{hash}`.
 
-The challenge was categorized as Hard, and the scoring system reflected this difficulty. Initially, the maximum score for completing the task was 300 points. However, due to the competitive nature of the CTF, the first team to complete the challenge received the full 300 points, while all other teams would only score 1 point upon completion, emphasizing the importance of speed and accuracy.
+The challenge was rated Hard, with a max score of 300 points. The first team to finish got the full score, while others received just 1 point, highlighting the need for speed and accuracy.
 
 ## Step 1: Username Search
 
-With the given username F14sh_W1l50n, my first approach was to check whether this handle was associated with any online profiles or social media accounts. For this, we used the [What's My Name tool](https://whatsmyname.app/), which allows users to search for a username across multiple platforms.
-
-![Name Found!](namefound.png)
-
-After initiating a search with F14sh_W1l50n, the tool quickly returned results showing that this username was associated with a Twitter account.
+With the given username F14sh_W1l50n, my first approach was to check whether this handle was associated with any online profiles or social media accounts. For this, we used the [What's My Name tool](https://whatsmyname.app/). After starting the search, we found results that shows the username was associated with a Twitter account.
 
 ![Twitter Found!](WilsonFtwitter.png)
 
-Once we confirmed that F14sh_W1l50n was associated with a Twitter account, we began exploring the user's activity on the platform. After scrolling through their timeline, we found a tweet containing a picture that appeared to be taken at a restaurant. However, the image had been deliberately cropped, making it challenging to gather clear details.
+Once we confirmed that F14sh_W1l50n was associated with a Twitter account, we began exploring the user's activity on the platform and after scrolling through their timeline, we found a tweet containing a picture that appeared to be taken at a restaurant. However, the image had been deliberately cropped, making it challenging to gather clear details.
 
 ![Cutout](Restaurant.png)
 
-From what was visible in the picture, we could make out a neon sign with partially cut-out letters that read “Chim”. Additionally, there was a plate on the table featuring what seemed to be a raw steak. Although the image was cropped and somewhat unclear, the presence of the neon sign and the food provided important clues that we could use to narrow down my search for the specific restaurant.
+From what was visible in the picture, we could make out a neon sign with cut-out letters that read “Chim-”, there was also a plate on the table with raw steak.
 
 ## Step 2: Gold HTML Badge
 
-After identifying F14sh_W1l50n's Twitter account and analyzing the image posted, we shifted focus to further clues. The next lead came from searching a gold HTML badge gained in July 2013, which led me to search on Stack Overflow for users who had claimed this specific badge during that time.
+Now, we shift focus to further clue which was the user's country. The challenge told us that there was a user that had earned the gold HTML badge gained in July 2013, which led me to search on Stack Overflow as it was the only website that gave badges for computing skills.
 
-During the search, we identified a user who was the only one who had earned the HTML badge in July 2013. Upon reviewing their profile, it is evident they are located in England, United Kingdom, providing the country information required by the challenge. Since the challenge specified that only the country information was necessary at this stage, we did not delve further into the user's profile.
+During the search, we identified a user who was the only one who had earned the HTML badge in July 2013. We can see that he is from England, United Kingdom, thus providing us the country information required by the challenge. Since the challenge specified that only the country information was necessary at this stage, we did not delve further into the user's profile.
 
 ![England,UK](gold_html.png)
 
 ## Step 3: Google Searching
 
-With these clues in hand—the word "Chim," a steak dish, and the UK location—it seemed clear that the next step was to search for restaurants matching these descriptions. So, we decided to put everything together and try a Google search using the terms "steak restaurant england united kingdom chim."
+With the clues that are : the word "Chim-" a steak dish, and the location England, it was clear that the next step was to search for restaurants matching these descriptions. So, we decided to put everything together and try a Google search using the terms "steak restaurant england united kingdom chim".
 
 ![Google Search](Restaurants.png)
 
@@ -51,7 +45,7 @@ The search results gave me several restaurant options, and we decided to dig thr
 
 ![Resturant Found!](Similiar.png)
 
-That's the restaurant found! Now, we just need to go ahead and find the user's favourite dessert.
+That's the same restaurant and table from the twitter photo! Now, we just need to go ahead and find the user's favourite dessert.
 
 ## Step 4: Finding and Hashing
 
@@ -66,14 +60,14 @@ On the dessert menu, we found four potential options:
 
 ![Desserts](Desserts.png)
 
-Despite there being 5 options, Ice cream was ruled out since it wasn’t specific enough, leaving me with four solid choices. With the four remaining dessert options: Panqueques, Puddings, Empanadas, and Alfajores. Now, we needed to determine which one was the favorite. By hashing the restaurant name, Chimichurris, along with each dessert name, we generated unique hashes for each option.
+Despite there being 5 options, Ice cream was ruled out since it wasn’t specific enough, leaving me with 4 solid choices. Now with the four remaining dessert options,we needed to determine which one was the favorite. By hashing the restaurant name, Chimichurris, along with each dessert name, we generated unique MD5 hashes for each option.
 
 - Panqueques : Chimichurris_Panqueques => FSIIEC{fa70e925f20f156ec4018f4fecf9bb24}
 - Puddings : Chimichurris_Puddings => FSIIEC{8d949fc11c395fead984d46235adea30}
 - Empanadas : Chimichurris_Empanadas => FSIIEC{99dfdd963422ee6b4acd98b5d62a4301}
 - Alfajores : Chimichurris_Alfajores => FSIIEC{d797712b3bbefdd084aab2e43f235d36}
 
-Bingo! The hash that matched the final answer was FSIIEC{d797712b3bbefdd084aab2e43f235d36}, which corresponded to the Alfajores dessert. This confirmed that F14sh_W1l50n’s favorite dessert was Alfajores!
+After tring out all 4 hashes, we found that the challenge accepted the answer FSIIEC{d797712b3bbefdd084aab2e43f235d36}, which corresponded to the Alfajores dessert. This confirmed that F14sh_W1l50n’s favorite dessert was Alfajores!
 
 ## Conclusion
 
