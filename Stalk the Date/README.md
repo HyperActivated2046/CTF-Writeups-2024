@@ -1,8 +1,8 @@
-# FSIIEC-CTF 2024
+# STALK THE DATE
 
 ## Introduction
 
-Stalk The Date was a 24-hour OSINT-based challenge with a difficulty rated as hard and a total of 300 points. The task was to gather personal information about a target using open-source techniques.
+Stalk The Date was a 24-hour OSINT-based challenge with a difficulty rated as hard and a total of 500 points. The task was to gather personal information about a target using open-source techniques.
 
 The task was to:
 
@@ -13,7 +13,7 @@ The task was to:
 - Finally, md5 hash his favorite restaurant and dessert (in plural) in the format: `Favouriterestaurant_Favouritedessertinplural`
   and submit it as `FSIIECTF{hash}`.
 
-The challenge was rated Hard, with a max score of 300 points. The first team to finish got the full score, while others received just 1 point, highlighting the need for speed and accuracy.
+The challenge was rated Hard, with a max score of 500 points. The first team to finish got the full score, while others received just 1 point, highlighting the need for speed and accuracy.
 
 ## Step 1: Username Search
 
