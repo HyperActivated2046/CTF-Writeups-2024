@@ -19,11 +19,11 @@ The challenge was rated Hard, with a max score of 300 points. The first team to 
 
 With the given username F14sh_W1l50n, my first approach was to check whether this handle was associated with any online profiles or social media accounts. For this, we used the [What's My Name tool](https://whatsmyname.app/). After starting the search, we found results that shows the username was associated with a Twitter account.
 
-![Twitter Found!](WilsonFtwitter.png)
+![Twitter Found!](images/WilsonFtwitter.png)
 
 Once we confirmed that F14sh_W1l50n was associated with a Twitter account, we began exploring the user's activity on the platform and after scrolling through their timeline, we found a tweet containing a picture that appeared to be taken at a restaurant. However, the image had been deliberately cropped, making it challenging to gather clear details.
 
-![Cutout](Restaurant.png)
+![Cutout](images/Restaurant.png)
 
 From what was visible in the picture, we could make out a neon sign with cut-out letters that read “Chim-”, there was also a plate on the table with raw steak.
 
@@ -33,17 +33,17 @@ Now, we shift focus to further clue which was the user's country. The challenge 
 
 During the search, we identified a user who was the only one who had earned the HTML badge in July 2013. We can see that he is from England, United Kingdom, thus providing us the country information required by the challenge. Since the challenge specified that only the country information was necessary at this stage, we did not delve further into the user's profile.
 
-![England,UK](gold_html.png)
+![England,UK](images/gold_html.png)
 
 ## Step 3: Google Searching
 
 With the clues that are : the word "Chim-" a steak dish, and the location England, it was clear that the next step was to search for restaurants matching these descriptions. So, we decided to put everything together and try a Google search using the terms "steak restaurant england united kingdom chim".
 
-![Google Search](Restaurants.png)
+![Google Search](images/Restaurants.png)
 
 The search results gave me several restaurant options, and we decided to dig through the top 2 restaurants. we landed on one restaurant's social media in particular, Chimichurris, featuring the same neon sign and same table we had seen in the Twitter photo.
 
-![Resturant Found!](Similiar.png)
+![Resturant Found!](images/Similiar.png)
 
 That's the same restaurant and table from the twitter photo! Now, we just need to go ahead and find the user's favourite dessert.
 
@@ -58,7 +58,7 @@ On the dessert menu, we found four potential options:
 - Empanada de Manzana
 - Alfajor Helado
 
-![Desserts](Desserts.png)
+![Desserts](images/Desserts.png)
 
 Despite there being 5 options, Ice cream was ruled out since it wasn’t specific enough, leaving me with 4 solid choices. Now with the four remaining dessert options,we needed to determine which one was the favorite. By hashing the restaurant name, Chimichurris, along with each dessert name, we generated unique MD5 hashes for each option.
 
@@ -75,4 +75,4 @@ Just like that, we found Wilson's favourite restaurant and dessert! Now we can s
 
 The challenge was both frustrating and fun. The format caused confusion, as the first letters of the restaurant and dessert had to be capitalized, and the dessert had to be plural and one word. This made finding the flag tricky, but once we figured it out, it was incredibly rewarding!
 
-![Whythatformat](meme.png)
+![Whythatformat](images/meme.png)
