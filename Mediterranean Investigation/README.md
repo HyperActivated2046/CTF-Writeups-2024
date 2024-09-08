@@ -154,7 +154,7 @@ This challenge was a ton of fun and we thoroughly enjoyed the whole process of p
 
 <div align="center">
 
-![Meme](images/Meme.png.png)
+![Meme](images/Meme.png)
 
 Honestly, poor Antonie Fermier, a ton of other groups probably spammed his inbox hoping for something. 😭
 
