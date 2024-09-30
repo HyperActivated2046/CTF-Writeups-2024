@@ -1,1 +1,1 @@
-Writeups of the FSIIEC-CTF Event in 2024.
+Writeups of the different CTFs I've been apart of in 2024.
